@@ -43,3 +43,7 @@
   background-color: rgb(224, 224, 224);
   border: 1px solid rgb(190, 190, 190);
 }
+
+button:active {
+  background-color: rgb(87, 66, 66);
+}
