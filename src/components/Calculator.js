@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
-  const [state, setState] = useState({
+  const initialState = {
     total: 0,
     next: null,
     operation: null,
-  });
-
-  const clickHandle = (e) => {
-    setState((state) => (calculate(state, e.target.name)));
   };
-  const { total, next, operation } = state;
+  const [calculator, setCalculator] = useState(initialState);
+  const clickHandle = (e) => {
+    setCalculator((calculator) => (calculate(calculator, e.target.name)));
+  };
+  const { total, next, operation } = calculator;
   return (
     <div className="wrapper">
       <div className="display">
