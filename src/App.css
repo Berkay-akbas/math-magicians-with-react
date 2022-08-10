@@ -1,6 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 .wrapper {
-  margin: 10%;
-  height: calc(50vw + 5rem);
+  height: 50vw;
+  width: 50vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -46,4 +50,15 @@
 
 button:active {
   background-color: rgb(87, 66, 66);
+}
+
+.calc {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.pcalc {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
