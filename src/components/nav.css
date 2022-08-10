@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  margin: auto;
+}
+
+.holder {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 0.2rem 1rem;
+}
+
+li:nth-child(-n + 2) {
+  border-right: solid black 2px;
+}
