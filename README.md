@@ -21,6 +21,15 @@ For the live demo click [here]()
 - GitHub: [@berkay-akbas](https://github.com/Berkay-akbas)
 - LinkedIn: [Berkay Akbas](https://www.linkedin.com/in/berkay-akbas-a03b3b239/)
 
+👤 **Clifford Owusu**
+
+- GitHub: [@sireclifford](https://github.com/sireclifford)
+
+👤 **Chimwemwe Mkandawire**
+
+- GitHub: [@chimwemwe007](https://github.com/chimwemwe007)
+- Twitter: [@chxmzmk](https://twitter.com/chxmzmk)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -46,11 +55,12 @@ Such dependencies include webpack and linters checks, for which you have to eith
 - `npm run build`
 - `npm run start`
 
-### Run tests
+### Run tests for linter and unit tests
 
 - `npx hint .`
 - `npx stylelint "**/*.scss"`
 - `npx eslint .`
+- `npm run test`
 
 ## 🤝 Contributing
 
