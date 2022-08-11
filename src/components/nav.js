@@ -2,12 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './nav.css';
 
-// const links = [
-//   { to: '/', text: 'Home' },
-//   { to: '/calculator', text: 'Calculator' },
-//   { to: '/quote', text: 'Quote' },
-// ];
-
 const Navbar = () => (
   <div className="navbar">
     <h1> MATH MAGICIANS</h1>
