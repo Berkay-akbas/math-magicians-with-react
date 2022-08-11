@@ -1,14 +1,14 @@
-import { render, screen } from "@testing-library/react";
-import { BrowserRouter as Router } from "react-router-dom";
-import userEvent from "@testing-library/user-event";
-import App from "./App";
+import { render, screen } from '@testing-library/react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import userEvent from '@testing-library/user-event';
+import App from './App';
 
-test("full app rendering/navigating", async () => {
+test('full app rendering/navigating', async () => {
   const user = userEvent.setup();
   render(
     <Router>
       <App />
-    </Router>
+    </Router>,
   );
 
   // verify page content for default route
@@ -20,7 +20,7 @@ test("full app rendering/navigating", async () => {
   await user.click(screen.getByText(/Quote/i));
   expect(
     screen.getByText(
-      /As far as the laws of mathematics refer to reality, they are not certain, and as far as they are certain, they do not refer to reality. — Albert Einstein/i
-    )
+      /As far as the laws of mathematics refer to reality, they are not certain, and as far as they are certain, they do not refer to reality. — Albert Einstein/i,
+    ),
   ).toBeInTheDocument();
 });
