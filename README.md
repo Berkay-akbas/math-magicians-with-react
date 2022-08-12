@@ -6,7 +6,7 @@
 
 - React
 - CSS
-- Linterns (Lighthouse, Webhint, Stylelint, Eslint)
+- Linters (Lighthouse, Webhint, Stylelint, Eslint)
 - Gitflow
 - Jest
 
