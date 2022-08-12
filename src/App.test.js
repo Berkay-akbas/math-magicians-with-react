@@ -1,14 +1,14 @@
 import { render, screen } from '@testing-library/react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter} from 'react-router-dom';
 import userEvent from '@testing-library/user-event';
 import App from './App';
 
 test('full app rendering/navigating', async () => {
   const user = userEvent.setup();
   render(
-    <Router>
+    <HashRouter>
       <App />
-    </Router>,
+    </HashRouter>,
   );
 
   // verify page content for default route
